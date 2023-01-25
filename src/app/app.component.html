@@ -1,2 +1,3 @@
-<app-menu></app-menu>
+<app-menu [darkMode]="router.url !== '/'"></app-menu>
+<!-- if/else Abfrage (Wenn Router URL / ist kommt false raus)-->
 <router-outlet></router-outlet>
