@@ -1,6 +1,6 @@
 header {
-  background-color: var(--background);
-  position: fixed;
+  background-color: var(--background1);
+  position: sticky;
   z-index: 2;
   right: 0;
   top: 0;
@@ -25,6 +25,10 @@ header {
 
     &:hover {
       cursor: pointer;
+      color: var(--akzent2);
+    }
+
+    &:active {
       color: var(--akzent2);
     }
   }

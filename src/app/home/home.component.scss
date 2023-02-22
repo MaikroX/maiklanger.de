@@ -14,7 +14,7 @@
       line-height: 90px;
     }
 
-    .highlight2 {
+    .highlight1 {
       color: var(--akzent1);
     }
 
@@ -41,7 +41,7 @@
   }
 
   .arrow-down {
-    position: fixed;
+    position: absolute;
     left: 50%;
     right: 50%;
     bottom: 32px;

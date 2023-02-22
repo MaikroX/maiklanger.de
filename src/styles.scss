@@ -1,5 +1,6 @@
 :root {
-  --background: #000000;
+  --background1: #000000;
+  --background2: #131111;
   --akzent1: #fa2759;
   --akzent2: #2dfcd8;
 }
@@ -16,5 +17,11 @@ body {
   font-weight: 400;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

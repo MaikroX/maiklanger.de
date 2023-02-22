@@ -10,6 +10,7 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
 import { HomeComponent } from './home/home.component';
 import { MainComponent } from './main/main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DataProtectionComponent,
     HomeComponent,
     MainComponent,
+    SkillsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
