@@ -1,5 +1,7 @@
-<app-menu [darkMode]="router.url !== '/'"></app-menu>
-<div [class.container]="router.url !== '/'">
-  <!-- if/else Abfrage (Wenn Router URL / ist kommt false raus)-->
-  <router-outlet></router-outlet>
-</div>
+<app-menu></app-menu>
+<app-main></app-main>
+
+<!-- <div [class.container]="router.url !== '/'"> -->
+<!-- if/else Abfrage (Wenn Router URL / ist kommt false raus) -->
+<router-outlet></router-outlet>
+<!-- </div> -->

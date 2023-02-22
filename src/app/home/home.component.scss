@@ -1,0 +1,50 @@
+.main-contain {
+  //   padding-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100vh;
+
+  .home-left {
+    margin-left: 160px;
+    h1 {
+      color: white;
+      font-size: 64px;
+      line-height: 90px;
+    }
+
+    .highlight2 {
+      color: var(--akzent1);
+    }
+
+    .button {
+      width: 300.52px;
+      height: 78px;
+      left: 125px;
+      top: 481px;
+      color: #2dfcd8;
+      background-color: #2dfcd900;
+      border: 2px solid #2dfcd8;
+      cursor: pointer;
+    }
+  }
+
+  .home-right {
+    .profil {
+      margin-right: 160px;
+      width: 350px;
+      height: 350px;
+      border-radius: 100%;
+      background-color: var(--akzent2);
+    }
+  }
+
+  .arrow-down {
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    bottom: 32px;
+    width: 50px;
+  }
+}
