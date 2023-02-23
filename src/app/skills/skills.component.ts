@@ -1,37 +1,46 @@
 import { Component, OnInit } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-skills',
-  templateUrl: '/skills.component.html',
+  templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss'],
-  template: `
-    <div class="skill-contain">
-      <div class="logo" *ngFor="let image of logos">
-        <img [src]="image.src" alt="" />
-      </div>
-      <div class="skill"></div>
-    </div>
-  `,
 })
 export class SkillsComponent implements OnInit {
-  logos = []; // Ändern Sie "logo" in "logos"
+  logos = [];
+  skill = [];
 
   ngOnInit() {
     this.loadImages();
+    this.loadSkills();
+    console.log(this.logos);
   }
 
   loadImages() {
     this.logos = [
-      // Ändern Sie "logo" in "logos"
-      { src: 'src/assets/img/skill-logo/javascript.png' },
-      { src: '/assets/img/skill-logo/angular.png' },
-      { src: '/assets/img/skill-logo/css.png' },
-      { src: '/assets/img/skill-logo/scrum.png' },
-      { src: '/assets/img/skill-logo/git.png' },
-      { src: '/assets/img/skill-logo/design-thinking.png' },
-      { src: '/assets/img/skill-logo/rest-api.png' },
-      { src: '/assets/img/skill-logo/test-automation.png' },
-      { src: '/assets/img/skill-logo/database.png' },
+      'javascript.png',
+      'angular.png',
+      'css.png',
+      'scrum.png',
+      'git.png',
+      'design-thinking.png',
+      'rest-api.png',
+      'test-automation.png',
+      'database.png',
+    ];
+  }
+
+  loadSkills() {
+    this.skill = [
+      'JavaScript',
+      'Angular',
+      'CSS',
+      'SCRUM',
+      'Git',
+      'Design-thinking',
+      'REST-API',
+      'Test-Automation',
+      'Database',
     ];
   }
 }
