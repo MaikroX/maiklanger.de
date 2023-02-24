@@ -1,0 +1,30 @@
+.work-body {
+  background-color: var(--background1);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    color: white;
+    font-size: 36px;
+  }
+
+  .button {
+    width: 128px;
+    height: 64px;
+    left: 125px;
+    top: 481px;
+    color: white;
+    background-color: #2dfcd900;
+    border: 2px solid var(--akzent1);
+    cursor: pointer;
+  }
+
+  .all-buttons :nth-child(2) {
+    margin: 0px 2px 0px 2px;
+  }
+}

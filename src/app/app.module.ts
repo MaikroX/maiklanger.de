@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { MainComponent } from './main/main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SkillsComponent } from './skills/skills.component';
+import { WorkComponent } from './work/work.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SkillsComponent } from './skills/skills.component';
     HomeComponent,
     MainComponent,
     SkillsComponent,
+    WorkComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-skills',
@@ -13,7 +12,6 @@ export class SkillsComponent implements OnInit {
   ngOnInit() {
     this.loadImages();
     this.loadSkills();
-    console.log(this.logos);
   }
 
   loadImages() {
@@ -25,8 +23,8 @@ export class SkillsComponent implements OnInit {
       'git.png',
       'design-thinking.png',
       'rest-api.png',
-      'test-automation.png',
       'database.png',
+      'responsive.png',
     ];
   }
 
@@ -39,8 +37,8 @@ export class SkillsComponent implements OnInit {
       'Git',
       'Design-thinking',
       'REST-API',
-      'Test-Automation',
       'Database',
+      'Responsive',
     ];
   }
 }
