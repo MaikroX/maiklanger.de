@@ -11,6 +11,7 @@
     margin: 40px;
     color: white;
     font-size: 36px;
+    cursor: default;
   }
 
   .button {
@@ -24,7 +25,41 @@
     cursor: pointer;
   }
 
-  .all-buttons :nth-child(2) {
-    margin: 0px 2px 0px 2px;
+  .all-buttons {
+    display: flex;
+    justify-content: center;
+
+    :nth-child(2) {
+      margin: 0px 2px 0px 2px;
+    }
+  }
+
+  .whole-work-contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .outer-contain {
+      max-width: 1110px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      cursor: default;
+    }
+
+    .work-contain {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 16px;
+      cursor: pointer;
+    }
+
+    img {
+      width: 400px;
+      height: 350px;
+    }
   }
 }

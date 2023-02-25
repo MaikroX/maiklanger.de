@@ -5,5 +5,15 @@
       <button class="button">All</button><button class="button">Angular</button
       ><button class="button">JavaScript</button>
     </div>
+    <div class="whole-work-contain">
+      <div class="d-flex outer-contain">
+        <div
+          class="work-contain"
+          *ngFor="let item of workImages; let i = index"
+        >
+          <img src="/assets/img/preview-defaults/{{ workImages[i] }} " alt="" />
+        </div>
+      </div>
+    </div>
   </div>
 </div>
