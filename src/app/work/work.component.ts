@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkComponent implements OnInit {
   workImages = [];
+  projects = [];
 
   ngOnInit() {
     this.loadImages();
-    console.log(this.workImages);
+    this.projectname();
+    console.log(this.projectname);
   }
 
   loadImages() {
@@ -20,5 +22,9 @@ export class WorkComponent implements OnInit {
       'preview-polo-loco.jpg',
       'preview-ring-of-fire.png',
     ];
+  }
+
+  projectname() {
+    this.projects = ['PORTFOLIO', 'JOIN', 'POLLO LOCO', 'RING-OF-FIRE'];
   }
 }

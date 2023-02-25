@@ -50,9 +50,7 @@
     }
 
     .work-contain {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      position: relative;
       margin: 16px;
       cursor: pointer;
     }
@@ -60,6 +58,13 @@
     img {
       width: 400px;
       height: 350px;
+    }
+
+    .project-name {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      color: white;
     }
   }
 }
