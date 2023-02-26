@@ -17,14 +17,21 @@ export class WorkComponent implements OnInit {
 
   loadImages() {
     this.workImages = [
-      'preview-homepage.jpg',
-      'preview-join.jpg',
-      'preview-polo-loco.jpg',
-      'preview-ring-of-fire.png',
+      'preview-homepage-my.jpg',
+      'preview-join-my.jpg',
+      'preview-pollo-loco-my.png',
+      'preview-pokedex-my.png',
+      'preview-ring-of-fire.jpg',
     ];
   }
 
   projectname() {
-    this.projects = ['PORTFOLIO', 'JOIN', 'POLLO LOCO', 'RING-OF-FIRE'];
+    this.projects = [
+      'PORTFOLIO',
+      'JOIN',
+      'POLLO LOCO',
+      'POKEDEX',
+      'RING OF FIRE',
+    ];
   }
 }
