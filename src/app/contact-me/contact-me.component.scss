@@ -1,0 +1,66 @@
+.contact-me-body {
+  background-color: var(--background1);
+  height: 100vh;
+  color: white;
+
+  .main-contain {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .margin-bottom {
+    margin-bottom: 32px;
+  }
+
+  .email-color {
+    color: var(--akzent2);
+  }
+
+  .lower-stage {
+    input {
+      background-color: var(--background2);
+      border: none;
+      border-radius: 4px;
+      font-size: 18px;
+      color: white;
+      line-height: 20px;
+      margin-bottom: 12px;
+      padding: 6px;
+      width: -webkit-fill-available;
+    }
+
+    .lower-stage textarea {
+      text-align: left;
+      vertical-align: top;
+    }
+    input,
+    select,
+    textarea {
+      color: rgba(255, 255, 255, 0.181);
+    }
+
+    input,
+    textarea {
+      display: inline-block;
+      vertical-align: top;
+      position: 0;
+    }
+  }
+
+  .message-box {
+    height: 120px;
+    display: inline-block;
+    text-align: start !important;
+    vertical-align: top;
+    padding: 10px;
+    box-sizing: border-box;
+    writing-mode: horizontal-tb !important;
+  }
+}

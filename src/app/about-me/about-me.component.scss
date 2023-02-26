@@ -30,7 +30,6 @@
 
       .upper-right-side {
         margin-left: 32px;
-        max-width: 280px;
 
         h2 {
           font-size: 36px;
@@ -41,19 +40,18 @@
     .downer-contain {
       display: flex;
       justify-content: center;
-      align-items: center;
+      // align-items: center;
       margin-top: 40px;
       margin-bottom: 40px;
       flex-wrap: wrap;
 
       .downer-inner-contain {
         display: flex;
-        justify-content: center;
         align-items: center;
         flex-direction: column;
         max-width: 200px;
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: 32px;
+        margin-right: 32px;
 
         img {
           background-color: var(--akzent1);
