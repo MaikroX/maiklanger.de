@@ -8,34 +8,36 @@
       </p>
       <div class="lower-stage">
         <div>
-          <p>Name</p>
-          <input type="text" placeholder="Enter your name" />
+          <!-- <p>Name</p> -->
+
+          <mat-form-field appearance="fill">
+            <mat-label>Your Name</mat-label>
+            <input matInput />
+          </mat-form-field>
         </div>
+
+        <div class="example-container">
+          <!-- <p>Email</p> -->
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your email</mat-label>
+            <input
+              matInput
+              placeholder="pat@example.com"
+              [formControl]="email"
+              required
+            />
+            <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
+          </mat-form-field>
+        </div>
+
         <div>
-          <p>Email adress</p>
-          <input type="text" placeholder="Enter your Email adress" />
-        </div>
+          <!-- <p>Message</p> -->
 
-        <p>Message</p>
-        <div class="input-contain">
-          <input
-            class="message-box"
-            type="text"
-            placeholder="Enter your message"
-          />
-        </div>
-
-        <!-- <form class="example-form">
-          <mat-form-field class="example-full-width">
-            <mat-label>Favorite food</mat-label>
-            <input matInput placeholder="Ex. Pizza" value="Sushi" />
+          <mat-form-field appearance="fill">
+            <mat-label>Your Message</mat-label>
+            <textarea matInput></textarea>
           </mat-form-field>
-
-          <mat-form-field class="example-full-width">
-            <mat-label>Leave a comment</mat-label>
-            <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
-          </mat-form-field>
-        </form> -->
+        </div>
       </div>
     </div>
   </div>
