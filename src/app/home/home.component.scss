@@ -1,13 +1,21 @@
 .main-contain {
   //   padding-top: 120px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-
   height: 100vh;
+  width: 100%;
+  background-color: var(--background1);
+
+  .inner-contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1110px;
+  }
 
   .home-left {
-    margin-left: 160px;
+    // margin-left: 160px;
     h1 {
       color: white;
       font-size: 64px;
@@ -34,7 +42,7 @@
 
   .home-right {
     .profil {
-      margin-right: 160px;
+      // margin-right: 160px;
       width: 350px;
       height: 350px;
       border-radius: 100%;

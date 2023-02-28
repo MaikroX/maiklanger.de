@@ -1,6 +1,5 @@
 .contact-me-body {
   background-color: var(--background1);
-  height: 100vh;
   color: white;
 
   .main-contain {
@@ -11,12 +10,17 @@
     align-items: center;
   }
 
+  .inner-contain {
+    padding-bottom: 40px;
+  }
+
   h2 {
     font-size: 36px;
   }
 
   .margin-bottom {
     margin-bottom: 32px;
+    text-align: center;
   }
 
   .email-color {
@@ -42,4 +46,17 @@
 
 .mdc-text-field--filled:not(.mdc-text-field--disabled) {
   background-color: rgb(184, 34, 34);
+}
+
+.button {
+  float: right;
+  width: 120px;
+  height: 50px;
+  left: 125px;
+  top: 481px;
+  color: #2dfcd8;
+  background-color: #2dfcd900;
+  border: 2px solid #2dfcd8;
+  // border-radius: 12px;
+  cursor: pointer;
 }

@@ -1,7 +1,9 @@
 <app-menu></app-menu>
 <app-main></app-main>
+<app-footer> </app-footer>
 
-<!-- <div [class.container]="router.url !== '/'"> -->
-<!-- if/else Abfrage (Wenn Router URL / ist kommt false raus) -->
-<router-outlet></router-outlet>
-<!-- </div> -->
+<div [class.container]="router.url !== '/'">
+  <!-- if/else Abfrage (Wenn Router URL / ist kommt false raus) -->
+  <router-outlet></router-outlet>
+  <!-- </div> -->
+</div>

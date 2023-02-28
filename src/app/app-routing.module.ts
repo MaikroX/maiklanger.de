@@ -5,7 +5,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 
 const routes: Routes = [
-  { path: '', component: SlideshowComponent },
+  // { path: '', component: SlideshowComponent },
   { path: 'imprint', component: ImprintComponent },
   { path: 'data-protection', component: DataProtectionComponent },
 ];

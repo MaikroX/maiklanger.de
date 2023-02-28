@@ -1,0 +1,24 @@
+.footer-body {
+  background-color: white;
+}
+
+.footer-inner {
+  display: flex;
+  min-height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 36px;
+  padding-right: 36px;
+  color: rgb(132, 132, 132);
+  flex-wrap: wrap;
+}
+
+.inner-right {
+  min-width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 32px;
+}

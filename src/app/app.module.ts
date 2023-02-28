@@ -18,6 +18,7 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     WorkComponent,
     AboutMeComponent,
     ContactMeComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
