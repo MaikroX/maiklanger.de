@@ -8,7 +8,9 @@
   h2 {
     display: flex;
     justify-content: center;
-    margin: 40px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+
     color: white;
     font-size: 36px;
     cursor: default;
@@ -28,10 +30,11 @@
   .all-buttons {
     display: flex;
     justify-content: center;
-
+    margin-bottom: 40px;
     :nth-child(2) {
       margin: 0px 2px 0px 2px;
     }
+    flex-wrap: wrap;
   }
 
   .whole-work-contain {
