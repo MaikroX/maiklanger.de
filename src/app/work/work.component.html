@@ -11,8 +11,21 @@
           class="work-contain"
           *ngFor="let item of workImages; let i = index"
         >
-          <img src="/assets/img/previews/{{ workImages[i] }} " alt="" />
-          <div class="project-name">{{ projects[i] }}</div>
+          <div class="works">
+            <div class="no-hover">
+              <img src="/assets/img/previews/{{ workImages[i] }} " alt="" />
+              <div class="project-name">{{ projects[i] }}</div>
+            </div>
+            <div class="with-hover">
+              <h3>{{ hoverHead[i] }}</h3>
+              <span class="padding-info">{{ hoverInfo[i] }}</span>
+              <div class="button-position">
+                <a target="#" href="{{ projektLink[i] }}">
+                  <button>Try Out</button></a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

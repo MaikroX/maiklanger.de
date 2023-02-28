@@ -63,9 +63,65 @@
 
     .project-name {
       position: absolute;
-      bottom: 16px;
-      left: 16px;
+      bottom: 8px;
+      left: 8px;
       color: white;
     }
   }
+}
+
+.works {
+  position: relative;
+}
+
+.no-hover {
+  width: 280px;
+  height: 250px;
+}
+
+.with-hover {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 280px;
+  height: 250px;
+  top: 0;
+  color: white;
+  opacity: 0;
+
+  :last-child {
+    cursor: pointer;
+  }
+}
+
+.with-hover:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.626);
+  cursor: default;
+}
+
+.padding-info {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+button {
+  width: 80px;
+  height: 35px;
+  left: 125px;
+  top: 481px;
+  color: #2dfcd8;
+  background-color: #2dfcd900;
+  border: 2px solid #2dfcd8;
+  // border-radius: 12px;
+  cursor: pointer;
+}
+
+.button-position {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
 }
