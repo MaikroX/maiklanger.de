@@ -4,7 +4,7 @@
 
 .footer-inner {
   display: flex;
-  min-height: 100px;
+  min-height: 64px;
   justify-content: space-between;
   align-items: center;
   padding-left: 36px;
@@ -21,4 +21,11 @@
 
 img {
   width: 32px;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(132, 132, 132) !important;
 }
