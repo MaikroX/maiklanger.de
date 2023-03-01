@@ -54,10 +54,10 @@ export class WorkComponent implements OnInit {
   hoverInfos() {
     this.hoverInfo = [
       'My Portfolio Page is written with Angular',
-      'Manage your tasks used Javascript & Bootsrap',
+      'Manage your tasks programmed with Javascript & Bootsrap',
       'Small jump & run game with OOP',
       'First generation Pokedex using API',
-      'Small card game written in Angular & used Firebase',
+      'Small card game written in Angular & Firebase used',
     ];
   }
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 
 @Component({
@@ -7,6 +7,7 @@ import { FormControl, Validators } from '@angular/forms';
   styleUrls: ['./contact-me.component.scss'],
 })
 export class ContactMeComponent {
+  @ViewChild('myForm') myForm: any;
   email = new FormControl('', [Validators.required, Validators.email]);
 
   getErrorMessage() {
@@ -15,5 +16,10 @@ export class ContactMeComponent {
     }
 
     return this.email.hasError('email') ? 'Not a valid email' : '';
+  }
+
+  sendMail() {
+    // action="https://maik-langer.developerakademie.net/send_mail/send_mail.php"
+    console.log('sending Mail', this.myForm);
   }
 }

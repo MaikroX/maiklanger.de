@@ -6,40 +6,52 @@
         Get in touch via the form below, or by email
         <span class="email-color">maiklanger@live.de</span>
       </p>
+
       <div class="lower-stage">
-        <div>
-          <!-- <p>Name</p> -->
+        <form #myForm>
+          <div>
+            <!-- <p>Name</p> -->
 
-          <mat-form-field appearance="fill">
-            <mat-label>Your Name</mat-label>
-            <input matInput />
-          </mat-form-field>
-        </div>
+            <mat-form-field appearance="fill">
+              <mat-label>Your Name</mat-label>
+              <input name="name" matInput required />
+            </mat-form-field>
+          </div>
 
-        <div class="example-container">
-          <!-- <p>Email</p> -->
-          <mat-form-field appearance="fill">
-            <mat-label>Enter your email</mat-label>
-            <input
-              matInput
-              placeholder="pat@example.com"
-              [formControl]="email"
-              required
-            />
-            <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
-          </mat-form-field>
-        </div>
+          <div class="example-container">
+            <!-- <p>Email</p> -->
+            <mat-form-field appearance="fill">
+              <mat-label>Enter your email</mat-label>
+              <input matInput placeholder="" [formControl]="email" required />
+              <mat-error *ngIf="email.invalid">{{
+                getErrorMessage()
+              }}</mat-error>
+            </mat-form-field>
+          </div>
 
-        <div>
-          <!-- <p>Message</p> -->
+          <div>
+            <!-- <p>Message</p> -->
 
-          <mat-form-field appearance="fill">
-            <mat-label>Your Message</mat-label>
-            <textarea matInput></textarea>
-          </mat-form-field>
-        </div>
+            <mat-form-field appearance="fill">
+              <mat-label>Your Message</mat-label>
+              <textarea matInput name="message" required></textarea>
+            </mat-form-field>
+          </div>
+          <a href="#mailMe">
+            <button class="slide">
+              <span class="contact-me">Contact me</span>
+            </button></a
+          >
+        </form>
 
-        <button class="button">Send</button>
+        <!-- <form
+          action="http://maik-langer.developerakademie.net/send_mail/send_mail.php"
+          method="post"
+        >
+          <input type="text" name="name" id="" />
+          <textarea name="message" id="" cols="30" rows="10"></textarea>
+          <button>Senden</button>
+        </form> -->
       </div>
     </div>
   </div>
