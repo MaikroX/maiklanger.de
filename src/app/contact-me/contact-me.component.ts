@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact-me',
@@ -7,7 +8,12 @@ import { FormControl, Validators } from '@angular/forms';
   styleUrls: ['./contact-me.component.scss'],
 })
 export class ContactMeComponent {
-  @ViewChild('myForm') myForm: any;
+  formData = {
+    name: '',
+    email: '',
+    message: '',
+  };
+
   email = new FormControl('', [Validators.required, Validators.email]);
 
   getErrorMessage() {
@@ -18,8 +24,21 @@ export class ContactMeComponent {
     return this.email.hasError('email') ? 'Not a valid email' : '';
   }
 
-  sendMail() {
-    // action="https://maik-langer.developerakademie.net/send_mail/send_mail.php"
-    console.log('sending Mail', this.myForm);
+  constructor(public http: HttpClient) {}
+
+  onSubmit() {
+    const formData = new FormData();
+    formData.append('name', this.formData.name);
+    formData.append('email', this.formData.email);
+    formData.append('message', this.formData.message);
+
+    this.http
+      .post(
+        'https://maik-langer.developerakademie.net/send_mail/send_mail.php',
+        formData
+      )
+      .subscribe((response) => {
+        console.log(response);
+      });
   }
 }
