@@ -1,4 +1,4 @@
-<div class="contact-me-body">
+<div class="contact-me-body" id="contactMe">
   <div class="main-contain">
     <div class="inner-contain">
       <h2>Contact me</h2>
@@ -32,7 +32,8 @@
             <mat-label>Enter your email</mat-label>
             <input
               matInput
-              placeholder="pat@example.com"
+              placeholder="yourEmail@live.com"
+              email="true"
               type="email"
               id="email"
               name="email"
@@ -54,7 +55,7 @@
             ></textarea>
           </mat-form-field>
         </div>
-        <button type="submit">Senden</button>
+        <button class="slide" type="submit">Senden</button>
       </form>
     </div>
   </div>

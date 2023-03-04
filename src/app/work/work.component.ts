@@ -12,12 +12,17 @@ export class WorkComponent implements OnInit {
   hoverInfo = [];
   projektLink = [];
 
+  angularprojekt: string = '';
+
+  filterProjects() {
+    return this.projects.filter((project) =>
+      project.toLowerCase().includes(this.angularprojekt.toLowerCase())
+    );
+  }
+
   ngOnInit() {
-    this.loadImages();
-    this.projectname();
-    this.hoverHeads();
-    this.hoverInfos();
-    this.projektLinks();
+    this.allProjectsLoad();
+
     console.log(this.projectname);
   }
 
@@ -67,6 +72,48 @@ export class WorkComponent implements OnInit {
       'https://maik-langer.developerakademie.net/JOIN-Maik/Join/login.html',
       'https://maik-langer.developerakademie.net/El%20Pollo%20Loco/index.html',
       'https://maik-langer.developerakademie.net/Pokedex/index.html',
+      'https://maik-langer.developerakademie.net/ringoffire/index.html',
+    ];
+  }
+
+  allProjectsLoad() {
+    this.loadImages();
+    this.projectname();
+    this.hoverHeads();
+    this.hoverInfos();
+    this.projektLinks();
+  }
+
+  angularProjectsLoad() {
+    this.workImages = ['preview-homepage-my.jpg', 'preview-ring-of-fire.jpg'];
+    this.projects = ['PORTFOLIO', 'RING OF FIRE'];
+    this.hoverHead = ['ANGULAR', 'RING OF FIRE'];
+    this.hoverInfo = [
+      'My Portfolio Page is written with Angular',
+      'Small card game written in Angular & Firebase used',
+    ];
+    this.projektLink = [
+      '#',
+      'https://maik-langer.developerakademie.net/ringoffire/index.html',
+    ];
+  }
+
+  javaScriptProjectsLoad() {
+    this.workImages = [
+      'preview-join-my.jpg',
+      'preview-pollo-loco-my.png',
+      'preview-pokedex-my.png',
+    ];
+    this.projects = ['JOIN', 'POLLO LOCO', 'POKEDEX'];
+    this.hoverHead = ['KANBAN BOARD', 'POLLO LOCO', 'POKEDEX'];
+    this.hoverInfo = [
+      'Manage your tasks programmed with Javascript & Bootsrap',
+      'Small jump & run game with OOP',
+      'First generation Pokedex using API',
+    ];
+    this.projektLink = [
+      'https://maik-langer.developerakademie.net/JOIN-Maik/Join/login.html',
+      'https://maik-langer.developerakademie.net/El%20Pollo%20Loco/index.html',
       'https://maik-langer.developerakademie.net/Pokedex/index.html',
     ];
   }
