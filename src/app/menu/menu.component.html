@@ -1,6 +1,8 @@
 <header>
   <div class="max-width-1000">
-    <a href="#home"> <img src="/assets/img/mein-logo4.png" alt="" /></a>
+    <a href="#home">
+      <img class="my-logo" src="/assets/img/mein-logo4.png" alt=""
+    /></a>
 
     <div class="allLinks">
       <a href="#home">HOME</a>
@@ -12,4 +14,22 @@
     <a routerLink="/imprint">Imprint</a> -->
     </div>
   </div>
+
+  <button
+    class="mat-button"
+    mat-icon-button
+    mat-button
+    [matMenuTriggerFor]="menu"
+    aria-label="Example icon-button with a menu"
+  >
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <div class="mobile-menu">
+      <a href="#home">HOME</a>
+      <a href="#skills">MY SKILLS</a>
+      <a href="#work">MY WORK</a>
+      <a href="#aboutMe">ABOUT ME</a>
+    </div>
+  </mat-menu>
 </header>
