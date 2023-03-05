@@ -48,13 +48,16 @@
     }
     .skill1 {
       animation: slideInLeft 0.35s ease-in-out;
+      -webkit-transform: translate3d(0, 0, 0);
     }
 
     .skill2 {
       animation: slideInLeft 0.65s ease-in-out;
+      -webkit-transform: translate3d(0, 0, 0);
     }
     .skill3 {
       animation: slideInLeft 0.95s ease-in-out;
+      -webkit-transform: translate3d(0, 0, 0);
     }
 
     @keyframes slideInLeft {
