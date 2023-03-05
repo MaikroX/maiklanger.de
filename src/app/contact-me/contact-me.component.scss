@@ -8,15 +8,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    @media (max-width: 450px) {
-      padding: 24px;
-      padding-top: 0px;
-    }
   }
 
   .inner-contain {
-    padding-bottom: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 80px;
   }
 
   h2 {

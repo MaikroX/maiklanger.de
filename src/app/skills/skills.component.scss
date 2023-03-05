@@ -10,6 +10,10 @@
     margin: 80px;
     color: white;
     font-size: 36px;
+
+    @media (max-width: 450px) {
+      margin-bottom: 72px;
+    }
   }
 
   .outer-contain {
@@ -28,7 +32,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 40px;
+    padding-bottom: 56px;
 
     .skill-contain {
       display: flex;

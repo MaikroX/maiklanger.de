@@ -37,7 +37,7 @@ export class SkillsComponent implements OnInit, AfterViewInit {
 
   loadSkills() {
     this.skill = ['JavaScript', 'Angular', 'HTML / CSS'];
-    this.skill2 = ['SCRUM', 'Git', 'Design-thinking'];
+    this.skill2 = ['SCRUM', 'Git', 'Design Thinking'];
     this.skill3 = ['REST-API', 'Database', 'Responsive'];
   }
 
