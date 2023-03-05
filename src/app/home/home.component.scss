@@ -32,9 +32,7 @@
     @media (max-width: 665px) {
       padding-top: 120px;
     }
-    @media (max-height: 650px) {
-      padding-top: 64px;
-    }
+
     @media (min-height: 1150px) {
       padding-top: 0px;
     }
@@ -60,6 +58,13 @@
       @media (max-height: 650px) {
         font-size: 32px;
         line-height: 32px;
+      }
+    }
+
+    a {
+      @media (max-width: 550px) {
+        display: flex;
+        justify-content: center;
       }
     }
 
@@ -248,8 +253,20 @@ button {
   }
 }
 
+.slide {
+  @media (max-width: 897px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
 @media (max-width: 665px) {
   .slide {
     margin-top: 100px;
+  }
+  @media (max-height: 750px) {
+    .slide {
+      margin-top: 50px;
+    }
   }
 }

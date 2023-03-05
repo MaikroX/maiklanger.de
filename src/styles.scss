@@ -52,14 +52,14 @@ body {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  border: solid 2px;
+  border: none;
   color: white;
-  background-color: #131111 !important;
+  background-color: #13111100 !important;
   width: 42px;
   height: 42px;
   position: absolute;
   top: 12px;
-  right: 24px;
+  right: 12px;
 }
 
 @media (max-width: 916px) {
