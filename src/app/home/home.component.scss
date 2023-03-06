@@ -87,11 +87,33 @@
   }
 
   .home-right {
+    .img-contain {
+      background-color: var(--akzent2);
+      border-radius: 100%;
+      border: none;
+      width: 350px;
+      height: 350px;
+
+      @media (max-width: 1065px) {
+        width: 300px;
+        height: 300px;
+      }
+
+      @media (max-width: 700px) {
+        width: 250px;
+        height: 250px;
+      }
+
+      @media (max-width: 280px) {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
     .profil {
       width: 350px;
       height: 350px;
       border-radius: 100%;
-      background-color: var(--akzent2);
 
       @media (max-width: 1065px) {
         width: 300px;
