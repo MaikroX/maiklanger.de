@@ -3,7 +3,7 @@
     <h2>My Skills</h2>
     <div class="whole-contain">
       <div *ngFor="let item of logos; let i = index" #skillContain>
-        <div class="skill-contain skill-entry1">
+        <div class="skill-contain skill-entry1 no-flick">
           <div class="logo">
             <img src="./assets/img/skill-logo/{{ logos[i] }}" alt="" />
           </div>
@@ -11,7 +11,7 @@
         </div>
       </div>
       <div *ngFor="let item of logos2; let i = index" #skillContain2>
-        <div class="skill-contain skill-entry2">
+        <div class="skill-contain skill-entry2 no-flick">
           <div class="logo">
             <img src="./assets/img/skill-logo/{{ logos2[i] }}" alt="" />
           </div>
@@ -19,7 +19,7 @@
         </div>
       </div>
       <div *ngFor="let item of logos3; let i = index" #skillContain3>
-        <div class="skill-contain skill-entry3">
+        <div class="skill-contain skill-entry3 no-flick">
           <div class="logo">
             <img src="./assets/img/skill-logo/{{ logos3[i] }}" alt="" />
           </div>

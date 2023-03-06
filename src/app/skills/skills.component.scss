@@ -45,19 +45,24 @@
       border-radius: 6px;
       margin: 24px;
       margin-top: 48px;
+      backface-visibility: hidden;
+      transform: translateZ(0);
     }
     .skill1 {
       animation: slideInLeft 0.35s ease-in-out;
-      -webkit-transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      transform: translateZ(0);
     }
 
     .skill2 {
       animation: slideInLeft 0.65s ease-in-out;
-      -webkit-transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      transform: translateZ(0);
     }
     .skill3 {
       animation: slideInLeft 0.95s ease-in-out;
-      -webkit-transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      transform: translateZ(0);
     }
 
     @keyframes slideInLeft {
@@ -69,15 +74,6 @@
         transform: translateX(0px);
       }
     }
-    // @keyframes slideInRight {
-    //   0% {
-    //     transform: translateX(2000px);
-    //   }
-
-    //   100% {
-    //     transform: translateX(0px);
-    //   }
-    // }
   }
 
   .logo {
@@ -99,4 +95,10 @@
   .skill {
     position: absolute;
   }
+}
+
+.no-flick {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
 }

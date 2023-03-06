@@ -109,3 +109,7 @@ h1 {
   position: absolute !important;
   right: -30px !important;
 }
+
+.ng-star-inserted {
+  -webkit-transform: translate3d(0, 0, 0);
+}

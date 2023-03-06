@@ -104,6 +104,11 @@
         height: 250px;
       }
 
+      @media (max-height: 668px) {
+        width: 200px;
+        height: 200px;
+      }
+
       @media (max-width: 280px) {
         width: 200px;
         height: 200px;
