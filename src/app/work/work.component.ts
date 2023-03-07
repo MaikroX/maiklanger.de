@@ -22,8 +22,6 @@ export class WorkComponent implements OnInit {
 
   ngOnInit() {
     this.allProjectsLoad();
-
-    console.log(this.projectname);
   }
 
   loadImages() {
