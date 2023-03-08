@@ -36,6 +36,7 @@ export class ContactMeComponent {
     this.http
       .post(
         'https://maik-langer.developerakademie.net/send_mail/send_mail.php',
+        // 'https://web291.dogado.net/send_mail/send_mail.php',
         formData
       )
       .subscribe((response) => {

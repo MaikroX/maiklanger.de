@@ -25,6 +25,7 @@
     background-color: #2dfcd900;
     border: 2px solid var(--akzent1);
     cursor: pointer;
+    border-radius: 4px;
   }
 
   .all-buttons {
@@ -62,6 +63,7 @@
     img {
       width: 280px;
       height: 186px;
+      border-radius: 4px;
     }
 
     .project-name {
@@ -224,4 +226,5 @@ button {
 
 .try-out {
   margin: 0px !important;
+  border-radius: 4px;
 }

@@ -83,6 +83,9 @@ body {
 
 .mat-mdc-menu-content {
   padding-top: 14px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 h2 {
@@ -112,4 +115,9 @@ h1 {
 
 .ng-star-inserted {
   -webkit-transform: translate3d(0, 0, 0);
+}
+
+.mat-mdc-menu-panel {
+  border-radius: 0px;
+  background-color: #2dfcd900;
 }

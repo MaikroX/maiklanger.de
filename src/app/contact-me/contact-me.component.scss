@@ -101,6 +101,10 @@
   box-shadow: inset 0 -3.25em 0 0 var(--hover);
 }
 
+.slide {
+  border-radius: 4px;
+}
+
 .slide:hover,
 .slide:focus {
   box-shadow: inset 10em 0 0 0 var(--hover);
