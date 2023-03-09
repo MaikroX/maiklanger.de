@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-contact-me',
@@ -46,11 +47,19 @@ export class ContactMeComponent {
           console.log(response);
           this.contactForm.reset();
         });
-      alert('Your email has been sent. ');
-      window.location.reload();
+
+      document.getElementById('emailSuccess').classList.remove('d-none');
     } else {
       // Formular ist ungültig, zeige Fehlermeldung an
-      alert('Please fill out all required fields.');
+      document.getElementById('warning').classList.remove('d-none');
     }
+  }
+
+  closeSuccess() {
+    document.getElementById('emailSuccess').classList.add('d-none');
+    window.location.reload();
+  }
+  closeWarning() {
+    document.getElementById('warning').classList.add('d-none');
   }
 }

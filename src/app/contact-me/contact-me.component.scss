@@ -152,3 +152,50 @@ button {
   line-height: 1;
   margin: 0.5em 0em 0.5em 0.5em;
 }
+
+.succes-mail {
+  position: absolute;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.33);
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.33);
+}
+
+.succes-okay {
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: var(--akzent1);
+  border-radius: 4px;
+  padding: 2px;
+  width: 50px;
+  width: 60px;
+  height: 32px;
+  margin: 0px;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+.warning-class {
+  background-color: var(--akzent1);
+  &:hover {
+    background-color: #fa275879;
+  }
+}
+
+.success-class {
+  background-color: var(--akzent2);
+  &:hover {
+    background-color: #2dfcd970;
+  }
+}
+
+.d-none {
+  display: none;
+}
