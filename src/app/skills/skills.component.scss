@@ -76,6 +76,14 @@
     }
   }
 
+  @media screen and (max-width: 650px) {
+    .skill1,
+    .skill2,
+    .skill3 {
+      animation: none !important;
+    }
+  }
+
   .logo {
     display: flex;
     justify-content: center;

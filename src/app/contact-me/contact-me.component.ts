@@ -20,7 +20,7 @@ export class ContactMeComponent {
 
   getErrorMessage() {
     if (this.contactForm.get('email').hasError('required')) {
-      return 'You must enter a value';
+      return 'Please enter your e-mail';
     }
 
     return this.contactForm.get('email').hasError('email')
